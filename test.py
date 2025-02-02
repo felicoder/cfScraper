@@ -1,10 +1,10 @@
 import requests
 
-url = "http://192.168.87.35:1050/getCF"
+url = "http://localhost:1050/getCF"
 payload = {
     "url": "https://fetlife.com/join",
-    "delay": 5,
-    "headless": True,
+    "delay": 10,
+    "headless": True
 }
 
 response = requests.post(url, json=payload)
