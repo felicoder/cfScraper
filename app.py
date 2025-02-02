@@ -31,4 +31,4 @@ def call_function():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=1050)

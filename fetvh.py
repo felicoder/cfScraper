@@ -1,10 +1,10 @@
 import requests
 
-url = "http://127.0.0.1:5000/getCF"
+url = "http://127.0.0.1:1050/getCF"
 payload = {
     "url": "https://fetlife.com/join",
     "delay": 5,
-    "headless": True,
+    "headless": False,
 }
 
 response = requests.post(url, json=payload)
