@@ -1,6 +1,6 @@
 import requests
 
-url = "http://127.0.0.1:1050/getCF"
+url = "http://192.168.87.35:1050/getCF"
 payload = {
     "url": "https://fetlife.com/join",
     "delay": 5,
