@@ -1,7 +1,7 @@
 from seleniumbase import SB
 
 
-def getCF(url, uAgent=None, proxy=None, delay=None, headless=False):
+def getCF(url, uAgent=None, proxy=None, delay=None, headless=True):
     options = {
         "uc": True,
         "locale_code": "en",
@@ -24,3 +24,4 @@ def getCF(url, uAgent=None, proxy=None, delay=None, headless=False):
         cookies = sb.get_cookies()
         cf_clearance_value = next((cookie['value'] for cookie in cookies if cookie['name'] == 'cf_clearance'), None)
         return cf_clearance_value, user_agent
+print(getCF("https://fetlife.com/join"))

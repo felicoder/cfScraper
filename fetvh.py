@@ -4,7 +4,7 @@ url = "http://192.168.87.35:1050/getCF"
 payload = {
     "url": "https://fetlife.com/join",
     "delay": 5,
-    "headless": False,
+    "headless": True,
 }
 
 response = requests.post(url, json=payload)
